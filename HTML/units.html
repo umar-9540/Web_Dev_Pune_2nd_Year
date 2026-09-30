@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 20px;
+      }
+
+      .level1 {
+        font-size: 2em;
+        background-color: red;
+        height: 50vh;
+        width: 50vw;
+        /* TOP - RIGHT - BOTTOM - LEFT */
+        padding: 20px 30px 10px 40px;
+        padding: 10px 20px;
+        padding: 10px;
+        margin: 30px;
+        border: 2px dashed green;
+      }
+      .level1:hover {
+        background-color: yellow;
+      }
+
+      .level1::before {
+        content: "YOU";
+        color: green;
+      }
+
+      .level2 {
+        font-size: 2em;
+      }
+
+      .level3 {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="level1">
+      Level 1 40px
+      <div class="level2">
+        Level 2 80px
+        <div class="level3">Level 3 160px</div>
+      </div>
+    </div>
+  </body>
+</html>

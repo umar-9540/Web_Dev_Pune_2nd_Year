@@ -1,0 +1,24 @@
+h1 {
+  color: green;
+}
+
+.world {
+  color: purple;
+  background-color: black;
+}
+
+#program {
+  color: gold;
+}
+
+h1::before {
+  color: red !important;
+}
+
+h1:hover {
+  background-color: red;
+}
+
+div + p {
+
+}

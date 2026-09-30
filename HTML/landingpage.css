@@ -1,0 +1,42 @@
+/* FLEX */
+nav {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  height: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  background-color: green;
+  height: 70vh;
+}
+
+.left-sidebar {
+  width: 20vw;
+  border: 1px solid black;
+}
+
+.main {
+  width: 60vw;
+  border: 1px solid black;
+}
+
+.right-sidebar {
+  width: 20vw;
+  border: 1px solid black;
+}
+
+/* GRID */
