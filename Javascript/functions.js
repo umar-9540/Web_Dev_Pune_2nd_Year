@@ -1,20 +1,20 @@
 // FUNCTION DECLARATION
 
-function greet (name) {
-    console.log(name);
+function greet(name) {
+  console.log(name);
 }
 
-greet("Sanchit");
+greet("prabhat");
 
 // FUNCTION EXPRESSION
 
 var a = function (name) {
-    console.log(name);
-}
+  console.log(name);
+};
 
-a("Sarth");
+a("hanmant");
 
-// ARROW Function
+// // ARROW Function
 
 var b = (name) => {
     console.log(name);

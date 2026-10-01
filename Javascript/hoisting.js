@@ -1,13 +1,20 @@
 console.log(a);
-greet("Umar");
-console.log(b);
-// b("Umar");
+greet("jahanvi");
+console.log(x);
+// x("Navya");
 
-var a = 5;
+var a = 10;
+
 function greet(name) {
-  console.log("Hello", name);
+  console.log(name);
 }
 
-var b = function (name) {
-  console.log("Hello", name);
-};
+var x = (name) => {
+  console.log(name);
+} 
+
+console.log(x);
+
+x("Navya");
+
+console.log(a);
