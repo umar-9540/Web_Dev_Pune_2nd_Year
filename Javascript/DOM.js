@@ -34,15 +34,15 @@ const p = document.querySelector("p");
 //   p.classList.toggle("highlight");
 // }
 
-const ul = document.querySelector("#students");
-const input = document.querySelector("#student-name");
-const button = document.querySelector("#add-student");
+// const ul = document.querySelector("#students");
+// const input = document.querySelector("#student-name");
+// const button = document.querySelector("#add-student");
 
-button.addEventListener("click", function () {
-  const newStudent = document.createElement("li");
-  newStudent.textContent = input.value;
-  ul.append(newStudent);
-});
+// button.addEventListener("click", function () {
+//   const newStudent = document.createElement("li");
+//   newStudent.textContent = input.value;
+//   ul.append(newStudent);
+// });
 
 
 // function addStudent() {
@@ -57,3 +57,21 @@ const paragraph = document.querySelector("#paragraph");
 function deleteParagraph() {
   paragraph.remove();
 }
+
+const input = document.querySelector("#live-track");
+const output = document.querySelector("#live-output");
+
+input.addEventListener("input", function() {
+  output.textContent = input.value;
+});
+
+
+const form = document.querySelector("#form");
+const emailInput = document.querySelector("#email");
+
+form.addEventListener("submit", function(event) {
+  console.log(event.type);
+  console.log(event.target);
+  event.preventDefault();
+  output.textContent = "Form Submitted by " + emailInput.value;
+})
