@@ -15,7 +15,7 @@
 
 // console.log("first");
 
-const timeoutId = setTimeout(() => {
+const timeoutId = setTimeout(function () {
     console.log("second");
 }, 3000);
 
@@ -26,23 +26,15 @@ const timeoutId = setTimeout(() => {
 
 // setTimeout(callback func, delay in milliseconds);
 
-// let count = 1;
+let count = 1;
 
-// const intervalId = setInterval(() => {
-//     console.log(count);
+const intervalID = setInterval(() => {
+    console.log(count);
 
-//     count++;
+    count++;
 
-//     if (count > 5) {
-//         clearInterval(intervalId);
-//         console.log("Interval cleared");
-//     }
-// }, 1000);
-
-console.log("first");
-
-setTimeout(() => {
-    console.log("second");
-}, 0);
-
-console.log("third");
+    if (count > 5) {
+        clearInterval(intervalID);
+        console.log("Interval cleared");
+    }
+}, 1000);
