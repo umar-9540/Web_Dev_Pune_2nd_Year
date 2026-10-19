@@ -11,17 +11,17 @@
 // greet("Ansh", welcome);
 
 
-function orderPlace(orderPrepare) {
+function orderPlace(cb) {
     setTimeout(function() {
         console.log("Order placed successfully");
-        orderPrepare(orderDeliver);
+        cb();
     }, 1000);
 };
 
-function orderPrepare(orderDeliver) {
+function orderPrepare(cb) {
     setTimeout(function() {
         console.log("Order is prepared");
-        orderDeliver();
+        cb();
     }, 2000);
 };
 
@@ -31,4 +31,14 @@ function orderDeliver() {
     }, 1000);
 };
 
-orderPlace(orderPrepare);
+orderPlace(() => {
+    orderPrepare(() => {
+        orderDeliver(() => {
+            khate((ngdg) => {
+                dhona(() => {
+                    sona()
+                })
+            })
+        });
+    });
+})
