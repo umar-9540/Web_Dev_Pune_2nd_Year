@@ -20,11 +20,9 @@ function wait(ms, value) {
   });
 }
 
-Promise.all([
-    wait(2000, "abc"),
-    wait(1000, "def"),
-    wait(5000, "ghi")
-]).then(ans => console.log(ans));
+// Promise.all([wait(2000, "abc"), wait(1000, "def"), wait(5000, "ghi")]).then(
+//   (ans) => console.log(ans),
+// );
 
 // wait(2000)
 //   .then((rangat) => console.log(rangat))
@@ -69,3 +67,5 @@ Promise.all([
 //   .then(() => orderDeliver())
 //   .then(() => console.log("Khana aa gya"))
 //   .catch(() => console.log("error"));
+
+
